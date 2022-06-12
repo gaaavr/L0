@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+</head>
+<body bgcolor="#FFE4B5">
+<h1><font size="16" face="serif">OrderUID: {{ .OrderUID}}</font></h1>
+<p>TrackNumber: {{ .TrackNumber}}</p>
+<p>Entry: {{ .Entry}}</p>
+<p>Delivery:</p>
+<p style="margin-left: 50px;">Name: {{ .Delivery.Name}}</p>
+<p style="margin-left: 50px;">Phone: {{ .Delivery.Phone}}</p>
+<p style="margin-left: 50px;">Zip: {{ .Delivery.Zip}}</p>
+<p style="margin-left: 50px;">City: {{ .Delivery.City}}</p>
+<p style="margin-left: 50px;">Address: {{ .Delivery.Address}}</p>
+<p style="margin-left: 50px;">Region: {{ .Delivery.Region}}</p>
+<p style="margin-left: 50px;">Email: {{ .Delivery.Email}}</p>
+<p>Payment:</p>
+<p style="margin-left: 50px;">Transaction: {{ .Payment.Transaction}}</p>
+<p style="margin-left: 50px;">RequestID : {{ .Payment.RequestID }}</p>
+<p style="margin-left: 50px;">Currency: {{ .Payment.Currency}}</p>
+<p style="margin-left: 50px;">Provider: {{ .Payment.Provider}}</p>
+<p style="margin-left: 50px;">Amount: {{ .Payment.Amount}}</p>
+<p style="margin-left: 50px;">PaymentDt: {{ .Payment.PaymentDt}}</p>
+<p style="margin-left: 50px;">Bank: {{ .Payment.Bank}}</p>
+<p style="margin-left: 50px;">DeliveryCost: {{ .Payment.DeliveryCost}}</p>
+<p style="margin-left: 50px;">GoodsTotal: {{ .Payment.GoodsTotal}}</p>
+<p style="margin-left: 50px;">CustomFee: {{ .Payment.CustomFee}}</p>
+<p>Items: {{ .Items}}</p>
+<p>Locale: {{ .Locale}}</p>
+<p>InternalSignature: {{ .InternalSignature}}</p>
+<p>CustomerID: {{ .CustomerID}}</p>
+<p>DeliveryService: {{ .DeliveryService}}</p>
+<p>Shardkey: {{ .Shardkey}}</p>
+<p>SmID: {{ .SmID}}</p>
+<p>DateCreated: {{ .DateCreated}}</p>
+<p>OofShard: {{ .OofShard}}</p>
+</body>
+</html>
