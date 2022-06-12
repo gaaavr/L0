@@ -38,7 +38,7 @@ func (a *App) Init() error {
 	cache := cache.NewCache()
 
 
-	newStore, err := store.NewStore("postgres://postgres:1488@localhost:5432/wb")
+	newStore, err := store.NewStore("db url")
 	if err != nil {
 		return err
 	}
